@@ -5,28 +5,28 @@
 # You can think of engine as your virtual speaker.
 # init() sets up everything needed for speaking.
 
-# import pyttsx3   
+import pyttsx3   
 
 # # Initialize the text-to-speech engine
 # #engine is just a variable holdnig engine object you can change the name as you want 
 # engine = pyttsx3.init()
 
 # # First sentence
-# text = "Hello, I am your Robo Reader. How can I assist you today?"
-# engine.say(text)
-# engine.runAndWait()
+text = "Hello, I am your Robo Reader. How can I assist you today?"
+engine.say(text)
+engine.runAndWait()
 
 # # Loop for user input
-# while True:
-#     text1 = input("Enter the text you want me to speak (or type 0 to exit):\n")
+while True:
+    text1 = input("Enter the text you want me to speak (or type 0 to exit):\n")
     
-#     if text1 == "0":
-#         engine.say("Bye bye! You pressed 0. 🙌")
-#         engine.runAndWait()
-#         break
+    if text1 == "0":
+        engine.say("Bye bye! You pressed 0. 🙌")
+        engine.runAndWait()
+        break
 
-#     engine.say(text1)
-#     engine.runAndWait()
+    engine.say(text1)
+    engine.runAndWait()
 
 
 
